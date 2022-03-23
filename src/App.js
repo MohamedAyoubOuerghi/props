@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Data from "./Profile/Component";
+import Image from "src\ayoub.png"
 
 function App() {
+  
+  let fun = {fullname:"mohamed ayoub ouerghi",bio:"engineers spark community ",profession:"chairman of engineers spark "}
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Data data={fun}>
+        <img src={Image}/>
+        </Data>
+      
     </div>
   );
 }
